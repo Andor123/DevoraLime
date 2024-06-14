@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>DevoraLime - PHP Test</title>
+    </head>
+    <body>
+        <h1>Hero Battle</h1>
+        <form action="api.php?action=generateHeroes" method="post">
+            <label for="numberOfHeroes">First, enter the number of heroes</label>
+            <input type="number" name="numberOfHeroes" id="numberOfHeroes" placeholder="Type a number" />
+            <input type="submit" value="Submit" />
+        </form>
+        <p>Then</p>
+        <form action="api.php?action=startBattle" method="post">
+            <label for="arenaId">Enter the arena ID</label>
+            <input type="text" name="arenaId" id="arenaId" placeholder="Type an arena ID" />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
